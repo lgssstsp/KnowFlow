@@ -1,6 +1,0 @@
-{
-    "paper_name": "SURE: Robust, Explainable, and Fair Classification without Sensitive Attributes",
-    "method_name": "Sure (Significant Unfairness Risk Elimination)",
-    "method_summary": "Sure is an iterative algorithm designed for fair classification in scenarios where sensitive attributes are unknown. In each iteration, it identifies high-risk zones in the feature space where the risk of unfair classification is statistically significant. By adjusting the weights in the loss function for these points, Sure aims to build a classifier that performs equitably across all subsets, including minority groups, while remaining robust against noise. The method emphasizes statistical significance to filter out random variations, making it both interpretable and explainable.",
-    "experiment_summary": "The experiments compared Sure's performance against competing methods on both simulated and real-world datasets. The results showed that Sure consistently outperformed other algorithms in terms of worst-case accuracy across all subgroups, with a notable ability to identify and focus on high-risk boxes significantly improving fairness while handling noise robustly."
-}

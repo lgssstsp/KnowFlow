@@ -1,6 +1,0 @@
-{
-    "paper_name": "Measuring and Relieving the Over-smoothing Problem for Graph Neural Networks from the Topological View",
-    "method_name": "MADReg and AdaGraph",
-    "method_summary": "This paper introduces two methods to alleviate the over-smoothing problem in Graph Neural Networks (GNNs) from a topological perspective. The first method, MADReg, incorporates a Mean Average Distance Gap (MADGap)-based regularizer into the training objective to enhance the flow of useful information and reduce noise during the message propagation phases of GNNs. The second method, AdaGraph, dynamically adjusts the graph topology by adding intra-class edges and removing inter-class edges iteratively, based on model predictions, thereby aiming to optimize the graph structure for improved learning outcomes.",
-    "experiment_summary": "The experiments evaluated the proposed methods on multiple GNN models across seven graph datasets, demonstrating that both MADReg and AdaGraph effectively reduce the over-smoothing issue, subsequently improving the performance of the models. The effectiveness was measured by comparing the prediction accuracy and MADGap values, revealing significant improvements across various conditions."
-}

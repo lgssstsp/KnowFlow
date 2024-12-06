@@ -1,6 +1,0 @@
-{
-    "paper_name": "Cost-effective Data Labelling for Graph Neural Networks",
-    "method_name": "Aggregation Involvement Maximization (AIM)",
-    "method_summary": "The paper introduces an unsupervised, scalable, and flexible active learning method tailored for Graph Neural Networks (GNNs), known as Aggregation Involvement Maximization (AIM). The AIM problem formulates the active learning challenge as maximizing the involvement of nodes in the feature aggregation process, which is crucial for the performance of GNNs. This method operates without the need for initially labeled nodes, specific GNN knowledge, or information on newly selected nodes, enhancing flexibility and scalability. The authors demonstrate theoretical guarantees and propose efficient algorithms to address the AIM problem, proving it is NP-hard while maintaining low memory and time costs.",
-    "experiment_summary": "The experiments conducted on multiple public datasets showcase the effectiveness, scalability, and flexibility of the proposed AIM method compared to state-of-the-art active learning methods. Results indicate that the AIM approach not only enhances accuracy but also provides significant speed improvements, demonstrating up to 19.4% higher accuracy and five orders of magnitude speedup in memory usage, making it a highly efficient method for data labeling in GNNs."
-}

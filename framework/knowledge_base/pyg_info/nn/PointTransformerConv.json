@@ -1,9 +1,0 @@
-{
-    "name": "PointTransformerConv",
-    "description": "The Point Transformer layer from the \"Point Transformer\" paper.",
-    "link": "../generated/torch_geometric.nn.conv.PointTransformerConv.html#torch_geometric.nn.conv.PointTransformerConv",
-    "paper_link": "https://arxiv.org/abs/2012.09164",
-    "paper_name": "\"Point Transformer\"",
-    "Local Paper PDF Path": "knowledge_base\\pyg_info\\nn\\PointTransformerConv.pdf",
-    "Paper Summary": "{    \"GNN_Design\": {        \"agg_ops\": \"Vector self-attention with subtraction relation and MLP mapping.\",        \"skip_connections\": \"Residual connections integrate the transformer layer.\",        \"layer_info_fusion\": \"Information is exchanged via localized feature vectors using self-attention.\",        \"num_layers\": \"Consists of multiple stages with downsampling for encoding and upsampling for decoding.\",        \"hyperparameters\": \"kNN graph with k=16 for local neighborhoods, learned position encoding.\",        \"activation\": \"ReLU is used within MLPs for non-linear transformations.\"    },    \"Experimental_Setup\": {        \"datasets\": \"S3DIS, ModelNet40, ShapeNetPart\",        \"dataset_summary\": {            \"S3DIS\": \"271 rooms with 13 semantic categories.\",            \"ModelNet40\": \"12,311 CAD models in 40 categories.\",            \"ShapeNetPart\": \"16,880 models from 16 categories, 50 parts.\"        },        \"baseline\": \"Comparison with models like PointNet, PointCNN, DGCNN, KPConv, etc.\",        \"performance_comparisons\": {            \"S3DIS\": \"70.4% mIoU on Area 5, first to surpass 70% mIoU, outperforming KPConv.\",            \"ModelNet40\": \"93.7% overall accuracy, outperforming DGCNN and KPConv.\",            \"ShapeNetPart\": \"86.6% instance mIoU, highest among reported models.\"        }    }}"
-}

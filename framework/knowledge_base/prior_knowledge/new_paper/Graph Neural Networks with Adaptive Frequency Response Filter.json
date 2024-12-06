@@ -1,6 +1,0 @@
-{
-    "paper_name": "Graph Neural Networks with Adaptive Frequency Response Filter",
-    "method_name": "AdaGNN",
-    "method_summary": "AdaGNN is a novel graph neural network framework that incorporates an adaptive frequency response filter to adjust the importance of different frequency components in spectral convolution. This adaptive filter applies a single learnable parameter to each feature channel at every layer, allowing for flexible handling of the varying significance of frequency components in node representation learning. By addressing the limitations of fixed low-pass filters used in conventional GNNs, AdaGNN effectively mitigates the over-smoothing problem prevalent in deeper layers, enhancing the expressiveness of learned node representations.",
-    "experiment_summary": "The experimental evaluations demonstrate that AdaGNN outperforms various state-of-the-art graph neural networks in semi-supervised node classification tasks. It shows significant improvements, especially in handling over-smoothing issues as the number of layers increases. The findings validate AdaGNN's capabilities in learning more discriminative embeddings by utilizing its adaptive frequency response filter, which effectively captures both low and high-frequency information."
-}

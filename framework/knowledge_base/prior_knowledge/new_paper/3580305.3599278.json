@@ -1,6 +1,0 @@
-{
-    "paper_name": "COMET: Learning Cardinality Constrained Mixture of Experts with Trees and Local Search",
-    "method_name": "COMET",
-    "method_summary": "COMET is a novel tree-based sparse gate designed for Sparse Mixture-of-Experts (Sparse-MoE) that enables efficient expert selection while preserving differentiability. It employs a decision-tree-based mechanism allowing for conditional training and a cardinality constraint, selecting at most 'k' experts per sample. This gate improves upon existing sparse gates by providing superior predictive performance and facilitating easier optimization through the integration of a permutation-based local search method.",
-    "experiment_summary": "The experiments demonstrate the efficacy of the proposed COMET and the combination with local search (COMET+) across various domains, including recommender systems, vision, and natural language processing. Results indicate significant improvements in prediction (up to 13% improvement in AUC) and reductions in hyperparameter tuning efforts (up to 100×), highlighting the effectiveness of the proposed methods compared to classic sparse gating techniques."
-}

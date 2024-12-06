@@ -1,6 +1,0 @@
-{
-    "paper_name": "Minimizing Hitting Time between Disparate Groups with Shortcut Edges",
-    "method_name": "Greedy Bicriteria Algorithm",
-    "method_summary": "The paper proposes a greedy bicriteria algorithm for minimizing the average hitting time (BMAH) by optimizing a supermodular objective function, leveraging properties of random walks in the network. The algorithm achieves an approximation guarantee of (1+ε). For minimizing maximum hitting time (BMMH), which is more challenging as the objective is not supermodular, the authors propose two algorithms that relate the maximum hitting time to the average hitting time, utilizing a connection to the asymmetric k-center problem.",
-    "experiment_summary": "The experiment evaluates the performance of the proposed Greedy+ algorithm against existing algorithms like RePBubLik+. The results demonstrate that Greedy+ effectively reduces both hitting time functions, performing competitively with RePBubLik+ while being simpler and more efficient."
-}

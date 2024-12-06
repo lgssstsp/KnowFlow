@@ -1,6 +1,0 @@
-{
-    "paper_name": "L2A: Learning to Augment Graph Data in Graph Neural Networks",
-    "method_name": "L2A (Learning to Augment)",
-    "method_summary": "The L2A framework transforms graph augmentation into a continuous optimization problem using a variational inference approach. It treats augmentation selections as latent variables and enables simultaneous maximum likelihood estimation of GNN parameters while learning optimal augmentations suitable for different heterophily levels in graphs. Additionally, L2A incorporates two auxiliary self-supervised tasks to utilize global position and label distribution information to enhance its performance without relying heavily on annotated labels.",
-    "experiment_summary": "Extensive experiments conducted on multiple synthetic and real-world datasets demonstrate that L2A significantly outperforms existing state-of-the-art graph augmentation techniques across various heterophily levels and is effective across different GNN architectures, making it a robust solution for semi-supervised node classification."
-}

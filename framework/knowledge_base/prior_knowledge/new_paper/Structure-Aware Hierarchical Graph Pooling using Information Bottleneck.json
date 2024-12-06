@@ -1,6 +1,0 @@
-{
-    "paper_name": "Structure-Aware Hierarchical Graph Pooling using Information Bottleneck",
-    "method_name": "HIBPool",
-    "method_summary": "HIBPool is a novel graph pooling method that utilizes the Information Bottleneck principle to optimally balance model expressiveness and robustness in learning representations of graph data. It introduces a structure-aware Discriminative Pooling Readout (DiP-Readout) function designed to capture informative local subgraph structures effectively. The pooling process operates hierarchically, allowing the model to create coarser graph representations while preserving critical structural information about the communities within the graph.",
-    "experiment_summary": "The experimental results demonstrate that HIBPool significantly outperforms several state-of-the-art methods on multiple graph classification benchmarks. Additionally, it shows resilience to feature-perturbation attacks, underscoring its effectiveness in capturing and maintaining crucial structural information despite input variations."
-}

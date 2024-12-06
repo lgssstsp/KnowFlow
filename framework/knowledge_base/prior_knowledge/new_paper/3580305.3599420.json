@@ -1,6 +1,0 @@
-{
-    "paper_name": "Machine Unlearning in Gradient Boosting Decision Trees",
-    "method_name": "Unlearning Framework for GBDT",
-    "method_summary": "This paper proposes a novel unlearning framework specifically designed for Gradient Boosting Decision Trees (GBDT). The framework formalizes the concept of machine unlearning and introduces techniques such as random split point selection and random partitioning layers during the training process. These methods allow for efficient unlearning of specific data instances without the need to retrain the entire model from scratch. The framework emphasizes maintaining model functionality while reducing latency by requiring fewer subtree retrainings.",
-    "experiment_summary": "The experimental evaluation demonstrates the effectiveness of the proposed unlearning methods on public datasets. Empirical results confirm that the functionality difference between the unlearned model and a model retrained from scratch is minimal, typically within 0.5%. The framework effectively removes the effects of malicious data and passes membership inference tests, indicating its practicality for real-world applications."
-}

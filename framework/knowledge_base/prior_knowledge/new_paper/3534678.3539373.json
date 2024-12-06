@@ -1,6 +1,0 @@
-{
-    "paper_name": "On Aligning Tuples for Regression",
-    "method_name": "Similarity Alignment under Model Constraint (SAMC)",
-    "method_summary": "This paper proposes a novel similarity alignment method for regression models that takes into account both time and model constraints. The method aims to align multiple variables recorded at different timestamps, allowing for the learning of a regression model that ensures aligned tuples conform to the dependencies defined by the model. The key aspects of the method include the formalization of the alignment problem, showing its NP-completeness, and the introduction of an approximational algorithm with performance guarantees. Efficient pruning strategies are also proposed to enhance algorithm efficiency.",
-    "experiment_summary": "The experiments conducted on real-world datasets demonstrate that the proposed method outperforms existing methods in both alignment accuracy and regression precision. The results indicate that aligning tuples and learning regression models improve one another in an iterative process, confirming the effectiveness of the SAMC approach."
-}

@@ -1,6 +1,0 @@
-{
-    "paper_name": "Using Motif Transitions for Temporal Graph Generation",
-    "method_name": "Motif Transition Model (MTM)",
-    "method_summary": "The Motif Transition Model (MTM) is designed to generate synthetic temporal networks that maintain the global and local features of an input temporal graph. It models the evolution of temporal motifs as a stochastic process, using calculated transition properties derived from the input graph. Instead of relying on predefined motifs, MTM simulates motif transitions based on transition probabilities and rates, allowing for a rich, flexible generation of networks that are more representative of real-world temporal graph dynamics and can be applied to large-scale networks efficiently.",
-    "experiment_summary": "The experimental evaluation of MTM demonstrates its ability to preserve various global graph statistics, such as the number of edges and mean degree, as well as local temporal motif features. The MTM consistently outperformed several baseline models in generating synthetic networks that accurately reflect the characteristics of the input graphs. Additionally, it was found to be significantly faster than baseline models, highlighting its efficiency and scalability. The runtime analysis confirmed the practical applicability of MTM in real-world scenarios."
-}

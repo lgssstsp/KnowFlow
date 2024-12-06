@@ -1,9 +1,0 @@
-{
-    "name": "FAConv",
-    "description": "The Frequency Adaptive Graph Convolution operator from the \"Beyond Low-Frequency Information in Graph Convolutional Networks\" paper.",
-    "link": "../generated/torch_geometric.nn.conv.FAConv.html#torch_geometric.nn.conv.FAConv",
-    "paper_link": "https://arxiv.org/abs/2101.00797",
-    "paper_name": "\"Beyond Low-Frequency Information in Graph Convolutional Networks\"",
-    "Local Paper PDF Path": "knowledge_base\\pyg_info\\nn\\FAConv.pdf",
-    "Paper Summary": "{    \"GNN_Design\": {        \"agg_ops\": \"Low-pass and high-pass filters to adaptively aggregate different frequency signals using a self-gating mechanism.\",        \"skip_connections\": \"Adaptive integration of raw features with aggregated signals helps retain additional information.\",        \"layer_info_fusion\": \"Layers aggregate low-frequency signals from similar-class neighbors and high-frequency signals from different-class neighbors.\",        \"num_layers\": \"Configurable; experiments showed performance analysis across different depths.\",        \"hyperparameters\": \"Includes a scaling parameter ε, dropout, learning rate, and weight decay. Exact settings vary per dataset.\",        \"activation\": \"Uses a tanh function within the self-gating mechanism.\"    },    \"Experimental_Setup\": {        \"datasets\": \"Cora, Citeseer, Pubmed, Chameleon, Squirrel, and Actor networks.\",        \"dataset_summary\": \"Assortative: Cora, Citeseer, Pubmed with publication citations. Disassortative: Chameleon, Squirrel with Wikipedia pages and Actor co-occurrence network.\",        \"baseline\": \"Comparison with models like SGC, GCN, GWNN, GIN, GAT, MoNet, APPNP, and Geom-GCN.\",        \"performance_comparisons\": \"FAGCN showed superior performance across multiple datasets, outperforming other models in both assortative and disassortative network analysis.\"    }}"
-}

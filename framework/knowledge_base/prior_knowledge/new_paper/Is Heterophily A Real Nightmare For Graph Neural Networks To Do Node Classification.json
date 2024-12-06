@@ -1,6 +1,0 @@
-{
-    "paper_name": "Is Heterophily A Real Nightmare For Graph Neural Networks To Do Node Classification?",
-    "method_name": "Adaptive Channel Mixing (ACM)",
-    "method_summary": "The paper presents the Adaptive Channel Mixing (ACM) framework designed to improve Graph Neural Networks (GNNs) performance on heterophilous graphs. It challenges the traditional assumption that heterophily always hinders GNNs by introducing new metrics based on the influence of both graph structure and input features. The ACM framework utilizes diverse operations including aggregation, diversification, and identity channels at each GNN layer, effectively tackling the negative impacts of harmful heterophily. It validates its design through the construction of a similarity matrix and highlights that not all heterophilous structures adversely affect GNN performance.",
-    "experiment_summary": "The experiments validate the effectiveness of the ACM framework through 10 real-world node classification tasks. The results demonstrate that ACM-augmented baseline models consistently achieve significant improvements over current state-of-the-art GNNs on these tasks without adding substantial computational complexity. The experiments also provide evidence of the advantages of the new homophily metrics introduced in the paper, showcasing the efficacy of ACM in practical applications."
-}

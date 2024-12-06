@@ -1,6 +1,0 @@
-{
-    "paper_name": "Generalized Matrix Local Low Rank Representation by Random Projection and Submatrix Propagation",
-    "method_name": "RPSP (Random Probing-based Submatrix Propagation)",
-    "method_summary": "RPSP is a computational framework designed to detect low-rank patterns in matrices that originate from small low-rank submatrices. It utilizes a random projection approach to evaluate the low-rankness of these submatrices, significantly enhancing computational efficiency compared to traditional methods that employ QR decomposition. RPSP systematically samples small submatrices, assesses their low-rank characteristics, and progressively merges them into larger patterns while maintaining low-rank properties. This framework is underpinned by mathematical theories of random projections, which support its capability to handle matrices with complex error distributions and varying sizes of submatrices.",
-    "experiment_summary": "In experimental evaluations, RPSP was tested against state-of-the-art methods on both synthetic and real-world datasets. The results indicated that RPSP consistently outperformed all baseline techniques, demonstrating its robustness in identifying local low-rank matrices, especially in scenarios where the mean structure of patterns is similar to the background noise or when faced with heteroscedastic errors."
-}

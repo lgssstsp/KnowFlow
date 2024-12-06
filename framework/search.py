@@ -71,13 +71,13 @@ class SearchingAgent(BaseLLM, BaseModel):
             The given level of task is $TASKLEVEL:{task_level}.
             Your job is to select the proper element in $FOLDLIST that is equivalent to $TASKLEVEL:{task_level} and the format of your output should be a dictionary as follows.
             path:Considering the task level $TASKLEVEL, output an appropriate element from the given list $FOLDLIST. Output only one element from the given list $FOLDLIST.
-            For example, if the task level is 'link-level', you must choose the fold './ProfCF/' and output {{'path':'./ProfCF/'}}, if the task level is 'graph-level', you must choose the fold './LRGNN/' and output {{'path':'./LRGNN/'}}, if the task level is 'node-level', you must choose the fold './F2GNN/' and output {{'path':'./F2GNN/'}}.
+            For example, if the task level is 'link-level', you must choose the fold './LINK_LEVEL/' and output {{'path':'./LINK_LEVEL/'}}, if the task level is 'graph-level', you must choose the fold './GRAPH_LEVEL/' and output {{'path':'./GRAPH_LEVEL/'}}, if the task level is 'node-level', you must choose the fold './NODE_LEVEL/' and output {{'path':'./NODE_LEVEL/'}}.
             """
     
 
         cur_time = time.strftime("%m%d_%H%M%S", time.localtime())
         
-        code_path = ['./F2GNN/','./LRGNN/','./ProfCF/']
+        code_path = ['./NODE_LEVEL/','./GRAPH_LEVEL/','./LINK_LEVEL/']
 
         for attempt in range(max_retries):
             response = llm_api.call_llm(select_path_prompt.format(fold_list=code_path,task_level=planning_results['Learning_tasks_on_graph']))
@@ -115,7 +115,7 @@ class SearchingAgent(BaseLLM, BaseModel):
 
 
 
-        if path in ['./F2GNN/']:
+        if path in ['./NODE_LEVEL/']:
             print('\n'+"*"*25, "START SEARCH", "*"*25)
             
 
@@ -130,7 +130,7 @@ class SearchingAgent(BaseLLM, BaseModel):
             
             output_file_name = 'search_logs/search_{}_{}.txt'.format(cur_time,data)
         
-        elif path in ['./LRGNN/']:
+        elif path in ['./GRAPH_LEVEL/']:
             readout_list = space['READOUT_GRAPH']
             readout_str = ''
             for readout in readout_list:
@@ -152,7 +152,7 @@ class SearchingAgent(BaseLLM, BaseModel):
 
             output_file_name = 'search_logs/search_{}_{}.txt'.format(cur_time,data)
 
-        elif path in ['./ProfCF/']:
+        elif path in ['./LINK_LEVEL/']:
 
             aggregation_operation_list = space['AGGREGATION']
             config_file_path = "run/grids/design/cf.txt"
@@ -230,7 +230,7 @@ class SearchingAgent(BaseLLM, BaseModel):
             4. The training logging of the best GNN architecture on the stp of random search is: {search_log}.
             """
 
-        if path in ['./F2GNN/']:
+        if path in ['./NODE_LEVEL/']:
             tmp = open(output_file_name).readlines()[-1].strip()
             searched_arch = ' '
             if "searched res for" in tmp:
@@ -257,7 +257,7 @@ class SearchingAgent(BaseLLM, BaseModel):
             print(summary)
             print('\n'+"="*25, 'SEARCH SUMMARY END',"="*25+'\n')
 
-        if path in ['./LRGNN/']:
+        if path in ['./GRAPH_LEVEL/']:
             tmp = open(output_file_name).readlines()[-1].strip()
             searched_arch = ' '
             if "searched res for" in tmp:
@@ -285,7 +285,7 @@ class SearchingAgent(BaseLLM, BaseModel):
             print(summary)
             print('\n'+"="*25, 'SEARCH SUMMARY END',"="*25+'\n')
 
-        elif path in ['./ProfCF/']:
+        elif path in ['./LINK_LEVEL/']:
             search_log_path = f'results/cf_grid_cf/{output_file_name}/agg/train/stats.json'
             all_logs = {}
             try:

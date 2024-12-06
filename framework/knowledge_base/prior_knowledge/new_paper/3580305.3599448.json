@@ -1,6 +1,0 @@
-{
-    "paper_name": "On Hierarchical Disentanglement of Interactive Behaviors for Multimodal Spatiotemporal Data with Incompleteness",
-    "method_name": "BiDisentMST",
-    "method_summary": "BiDisentMST introduces a novel two-level hierarchical framework for disentangled representation learning of Multimodal Spatiotemporal Data (MST). It effectively handles real-world data incompleteness by designing the framework to manage missing values, frames, and modalities. The method leverages Gaussian Processes for intra-modality appearance-level disentanglement and Graph Factorization Networks for inter-modality relation-level disentanglement. The framework also includes a hierarchical generative process that recovers complex MST data, ensuring that the learned representations encapsulate informative and structured semantics.",
-    "experiment_summary": "The experiments compare the BiDisentMST against several baselines across various datasets with different incompleteness patterns. Results demonstrate BiDisentMST's superior performance in both disentanglement capacity and missing data imputation. Metrics like DCI scores and classification accuracy emphasize its robustness in dealing with incomplete MST data, highlighting the effectiveness of the proposed two-level disentanglement approach."
-}

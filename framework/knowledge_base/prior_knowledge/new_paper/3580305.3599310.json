@@ -1,6 +1,0 @@
-{
-    "paper_name": "Parameter-free Spikelet: Discovering Different Length and Warped Time Series Motifs using an Adaptive Time Series Representation",
-    "method_name": "MeWS (Motifs enabled Warping and Scaling)",
-    "method_summary": "MeWS is a novel time series motif discovery method that allows for the identification of warped motifs with variable lengths. It addresses the limitations of existing algorithms by permitting users to specify only the maximum acceptable length of motifs rather than a fixed length. This method employs an adaptive time series representation and introduces milestone concepts in segmentation and the Spikelet Matrix Profile to enable efficient discovery of motifs that exhibit significant structural variations.",
-    "experiment_summary": "Extensive empirical evaluations demonstrate that MeWS is scalable for real-world datasets and successfully identifies different-length and warped motifs that are typically missed by conventional methods. The experiments analyze the efficiency, accuracy, and runtime comparison of MeWS against existing motif discovery algorithms. The results indicate that MeWS significantly outperforms fixed-length approaches, providing meaningful motif results efficiently."
-}

@@ -99,7 +99,7 @@ class KnowledgeAgent:
         pdf_files = [f for f in os.listdir(background_dir) if f.endswith('.pdf')]
         
         for pdf_file in pdf_files:
-            pdf_dict = {'F2GNN.pdf': 'node-level', 'LRGNN.pdf': 'graph-level', 'ProfCF.pdf': 'link-level'}
+            pdf_dict = {'NODE_LEVEL.pdf': 'node-level', 'GRAPH_LEVEL.pdf': 'graph-level', 'LINK_LEVEL.pdf': 'link-level'}
             pdf_path = os.path.join(background_dir, pdf_file)
 
             text = self.extract_text_from_pdf(pdf_path)
@@ -601,12 +601,12 @@ class KnowledgeAgent:
         
         path = all_result.get('path', '')
         model_type = None
-        if './F2GNN/' in path:
-            model_type = 'F2GNN'
-        elif './LRGNN/' in path:
-            model_type = 'LRGNN'
-        elif './ProfCF/' in path:
-            model_type = 'ProfCF'
+        if './NODE_LEVEL/' in path:
+            model_type = 'NODE_LEVEL'
+        elif './GRAPH_LEVEL/' in path:
+            model_type = 'GRAPH_LEVEL'
+        elif './LINK_LEVEL/' in path:
+            model_type = 'LINK_LEVEL'
         if model_type:
             background_file_path = os.path.join(self.base_dir, 'background', f'{model_type}.json')
             

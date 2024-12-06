@@ -69,7 +69,7 @@ class ResponseAgent(BaseLLM, BaseModel):
         
         print('\n'+'='*25, "RESPONSE AGENT", '='*25+'\n')
 
-        if path in ['./F2GNN/', './LRGNN/']:
+        if path in ['./NODE_LEVEL/', './GRAPH_LEVEL/']:
 
             with open(searched_arch_file, 'r', encoding='UTF-8') as searched_arch:
                 searched_arch_str = searched_arch.read()
@@ -95,7 +95,7 @@ class ResponseAgent(BaseLLM, BaseModel):
                 sys.exit()
 
 
-        elif path in ['./ProfCF/']:
+        elif path in ['./LINK_LEVEL/']:
 
             data = pd.read_csv(searched_arch_file)
             data = data.loc[data['rmse'].idxmin()]

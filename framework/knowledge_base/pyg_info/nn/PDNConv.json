@@ -1,7 +1,0 @@
-{
-    "name": "PDNConv",
-    "description": "The pathfinder discovery network convolutional operator from the \"Pathfinder Discovery Networks for Neural Message Passing\" paper.",
-    "link": "../generated/torch_geometric.nn.conv.PDNConv.html#torch_geometric.nn.conv.PDNConv",
-    "paper_link": "https://arxiv.org/abs/2010.12878",
-    "paper_name": "\"Pathfinder Discovery Networks for Neural Message Passing\""
-}

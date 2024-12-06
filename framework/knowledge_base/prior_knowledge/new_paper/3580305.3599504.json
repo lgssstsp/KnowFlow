@@ -1,6 +1,0 @@
-{
-    "paper_name": "Sketch-Based Anomaly Detection in Streaming Graphs",
-    "method_name": "Higher-Order Sketch",
-    "method_summary": "The paper introduces a higher-order count-min sketch (H-CMS) as a data structure for detecting anomalies in streaming graphs. This structure preserves the dense subgraph relations, facilitating the detection of anomalous edges and subgraphs in a continuous manner. The authors propose four online algorithms (AnoEdge-G, AnoEdge-L for edge anomalies, and AnoGraph, AnoGraph-K for graph anomalies) that utilize this H-CMS for real-time processing. These algorithms process incoming edges and graphs in constant time and memory, ensuring scalability regardless of graph size.",
-    "experiment_summary": "The experimental section demonstrates the effectiveness of the proposed methods by comparing them against state-of-the-art baselines on four real-world datasets. The results indicate that the proposed algorithms (AnoEdge-G, AnoEdge-L, AnoGraph, AnoGraph-K) significantly outperform existing methods in terms of both accuracy and running time while maintaining constant memory usage."
-}

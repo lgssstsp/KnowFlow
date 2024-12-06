@@ -1,6 +1,0 @@
-{
-    "paper_name": "Communication Efficient and Differentially Private Logistic Regression under the Distributed Setting",
-    "method_name": "Sk-RSGD-AR",
-    "method_summary": "The paper presents Sk-RSGD-AR, a novel mechanism for logistic regression utilizing differential privacy (DP) within a distributed learning framework. The method leverages output perturbation techniques and employs integer-valued DP noise (Skellam noise) to secure individual records, allowing clients to share only the aggregated result after training, thus reducing communication costs. Clients perform local updates using discretized values of model changes and individually inject noise before aggregating. This approach contrasts with traditional gradient perturbation methods, which typically necessitate multiple communication rounds.",
-    "experiment_summary": "The experiments demonstrate the effectiveness of Sk-RSGD-AR through evaluations on various real-world datasets. Results indicate that the proposed method achieves comparable or superior performance in terms of privacy-utility trade-offs compared to existing approaches while significantly reducing the number of communication rounds required to aggregate updates from clients."
-}

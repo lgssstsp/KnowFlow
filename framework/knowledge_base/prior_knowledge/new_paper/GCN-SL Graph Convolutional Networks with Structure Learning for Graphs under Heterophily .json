@@ -1,6 +1,0 @@
-{
-    "paper_name": "GCN-SL: Graph Convolutional Networks with Structure Learning for Graphs under Heterophily",
-    "method_name": "GCN-SL",
-    "method_summary": "The proposed GCN-SL integrates an efficient-spectral-clustering (ESC) and an ESC with anchors (ESC-ANCH) algorithm to effectively aggregate feature representations from similar nodes in graph-structured data. It optimizes a re-connected adjacency matrix that captures long-range dependencies and is specifically designed to overcome the limitations of traditional GCNs when applied to graphs with low homophily. This model employs a unique data preprocessing technique for initial features to mitigate overfitting while enabling the system to adaptively learn and highlight key dimensions, thereby enhancing classification performance.",
-    "experiment_summary": "The experimental results demonstrate that GCN-SL outperforms state-of-the-art GNN counterparts across a variety of benchmarks. The model shows superior performance on datasets with varying levels of homophily, indicating its robust ability to handle both homophilic and heterophilic graphs. The improvements in classification accuracy when using GCN-SL are attributed to its effective structural learning and feature aggregation methods."
-}

@@ -1,6 +1,0 @@
-{
-    "paper_name": "Accelerating Personalized PageRank Vector Computation",
-    "method_name": "FwdPushSOR",
-    "method_summary": "The paper presents FwdPushSOR, a new method for computing Personalized PageRank Vectors (PPVs) that enhances the efficiency of the traditional FwdPush algorithm. By leveraging the Successive Over-Relaxation technique, FwdPushSOR speeds up the original method while maintaining a simple implementation akin to FwdPush. Additionally, it establishes a locally linear convergence rate, showing that the complexity bound is independent of the graph structure, which contributes to improved performance in both directed and undirected graphs.",
-    "experiment_summary": "Experiments were conducted on six real-world graphs to compare FwdPushSOR and various acceleration methods against traditional PageRank computation methods. Results indicated that FwdPushSOR and the acceleration techniques significantly reduced runtime and the number of operations, achieving approximately 2-3 times speedup relative to baseline algorithms across different graph types, especially when the teleportation parameter is set to 0.15."
-}

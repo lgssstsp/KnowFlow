@@ -1,6 +1,0 @@
-{
-    "paper_name": "Robust Event Forecasting with Spatiotemporal Confounder Learning",
-    "method_name": "CAPE",
-    "method_summary": "The proposed method, CAPE, integrates causal inference into event forecasting, specifically focusing on estimating Individual Treatment Effects (ITE) from observational event data with spatiotemporal attributes. It introduces a novel causal inference model that captures the representations of hidden confounders influenced by spatiotemporal dependencies. CAPE consists of two robust learning modules: a feature reweighting module that enhances the event prediction model's robustness to noise by incorporating learned causal information, and an approximation constraint loss that applies value range constraints to improve prediction robustness.",
-    "experiment_summary": "The experimental evaluation demonstrates the effectiveness of CAPE in estimating ITEs and improving event prediction robustness. It is assessed on real-world event datasets from different countries (India, Nigeria, Australia, Canada) and compared against various baseline methods. The results show that CAPE achieves superior performance, notably lower ATT errors for ITE estimation, and consistently high balanced accuracy for event prediction across varying noise levels in training and validation data."
-}

@@ -3,10 +3,10 @@
 
 # Directory Structure
     framework/ 
-    ├── F2GNN/ # automl source code 
-    ├── LRGNN/ # automl source code 
-    ├── ProfCF/ # automl source code 
-    ├── all-MiniLM-L6-v2/ # Word embedding model, can be downloaded from https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2 
+    ├── NODE_LEVEL/ # automl source code 
+    ├── GRAPH_LEVEL/ # automl source code 
+    ├── LINK_LEVEL/ # automl source code 
+    ├── all-MiniLM-L6-v2/ # Pretrained language model, can be downloaded from https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2 
     ├── knowledge_base/ # Knowledge base file directory 
     ├── manager.py # Manager agent 
     ├── data.py # Data agent 

@@ -1,6 +1,0 @@
-{
-    "paper_name": "Text Is All You Need: Learning Language Representations for Sequential Recommendation",
-    "method_name": "Recformer",
-    "method_summary": "Recformer is a novel framework designed to learn language representations for sequential recommendation tasks. The framework formulates items as key-value attribute pairs, flattening them into 'sentences' to represent user interactions. A bi-directional Transformer, inspired by Longformer, is employed to understand these 'sentences' and predict the next item by leveraging language representations. This method integrates novel pretraining and fine-tuning strategies to enhance representation learning, making it capable of generalizing to cold-start items and new datasets.",
-    "experiment_summary": "Extensive experiments were conducted across six datasets to evaluate the effectiveness of Recformer. The results highlighted its superior performance in low-resource and cold-start scenarios, significantly outperforming traditional sequential recommendation models that rely on item IDs. The evaluation metrics included NDCG@10 and Recall@10, where Recformer demonstrated marked improvements, such as 15.83% enhancement in NDCG@10 under fully-supervised settings."
-}

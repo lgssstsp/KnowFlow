@@ -1,6 +1,0 @@
-{
-    "paper_name": "Tackling Over-Smoothing for General Graph Convolutional Networks",
-    "method_name": "DropEdge",
-    "method_summary": "The DropEdge method is proposed to alleviate the over-smoothing issue in Graph Convolutional Networks (GCNs). It operates by randomly removing a certain number of edges during each training epoch. This dropout-style operation is shown to either slow down the convergence of over-smoothing or reduce the information loss resulting from dimensional collapse. The technique serves both to provide a form of data augmentation and to enhance the expressiveness of GCNs by retaining essential node features and fostering diversity in the input data.",
-    "experiment_summary": "Extensive experiments conducted on several real-world benchmarks demonstrate that DropEdge consistently improves performance across various GCN architectures, including both shallow and deep models. The results illustrate its effectiveness in counteracting over-smoothing, as well as in enhancing overall classification accuracy when applied to GCNs."
-}

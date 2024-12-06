@@ -1,6 +1,0 @@
-{
-    "paper_name": "DiffGCN: Graph Convolutional Networks via Differential Operators and Algebraic Multigrid Pooling",
-    "method_name": "DiffGCN",
-    "method_summary": "The proposed DiffGCN leverages parameterized convolution kernels inspired by discretized differential operators. It defines a 3D convolution kernel based on these operators, incorporating the mass, gradient, and Laplacian of the graph. This parameterization is independent of the graph structure, focusing on the differential operators' role in performing convolutions. Additionally, pooling and unpooling operations are introduced based on algebraic multigrid methods, allowing for hierarchical representations of input data. These approaches aim to reduce computational costs while increasing network depth and receptive fields.",
-    "experiment_summary": "The experiments validate the effectiveness of the proposed DiffGCN method in tasks such as classification and part segmentation. The model achieves performance that is on par with or better than state-of-the-art results in various datasets, including ModelNet40 for classification and ShapeNet Parts for part segmentation. The authors also analyze computational costs, demonstrating how DiffGCN reduces floating-point operations compared to other graph convolutional networks."
-}

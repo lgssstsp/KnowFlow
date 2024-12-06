@@ -1,7 +1,0 @@
-{
-    "paper_name": "RLogic: Recursive Logical Rule Learning from Knowledge Graphs",
-    "method_name": "RLogic",
-    "method_summary": "RLogic proposes a novel framework for logical rule learning that operates at the schema level using a representation learning-based scoring model. This model avoids reliance on observed rule instances for evaluation by defining a score function based on learned predicate representations. Furthermore, it incorporates deductive reasoning by breaking a large sequential model into smaller atomic models recursively. This allows RLogic to derive new rules from existing rules even in the absence of direct supporting evidence.",
-    "experiment_summary": "RLogic is shown to outperform existing state-of-the-art algorithms in terms of both effectiveness and efficiency. The experiments assess the quality of the learned rules across various benchmark datasets, demonstrating significant improvements in knowledge graph completion tasks and other logical rule learning tasks."
-}
-

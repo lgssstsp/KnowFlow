@@ -1,9 +1,0 @@
-{
-    "name": "LGConv",
-    "description": "The Light Graph Convolution (LGC) operator from the \"LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation\" paper.",
-    "link": "../generated/torch_geometric.nn.conv.LGConv.html#torch_geometric.nn.conv.LGConv",
-    "paper_link": "https://arxiv.org/abs/2002.02126",
-    "paper_name": "\"LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation\"",
-    "Local Paper PDF Path": "knowledge_base\\pyg_info\\nn\\LGConv.pdf",
-    "Paper Summary": "{    \"GNN_Design\": {        \"agg_ops\": \"Weighted sum of neighborhood embeddings without feature transformation or nonlinear activation.\",        \"skip_connections\": \"Layer combination effectively incorporates self-connection by weighted sum across layers.\",        \"layer_info_fusion\": \"Embedding from each layer is combined using weighted sum to form the final user and item embeddings.\",        \"num_layers\": \"Typically 3, with performance improvements diminishing beyond this.\",        \"hyperparameters\": \"Layer combination weights can be uniformly set to 1/(K+1) or optimized, though uniform setting generally performs well.\",        \"activation\": \"No nonlinear activation functions used.\"    },    \"Experimental_Setup\": {        \"datasets\": [\"Gowalla\", \"Yelp2018\", \"Amazon-Book\"],        \"dataset_summary\": \"Datasets consist of user-item interactions with the following stats: Gowalla (29,858 users, 40,981 items, 1,027,370 interactions), Yelp2018 (31,668 users, 38,048 items, 1,561,406 interactions), Amazon-Book (52,643 users, 91,599 items, 2,984,108 interactions).\",        \"baseline\": [\"NGCF\", \"Mult-VAE\", \"GRMF\", \"GRMF-norm\"],        \"performance_comparisons\": \"LightGCN shows average recall improvement of 16.52% and ndcg improvement of 16.87% over NGCF and outperforms other baselines across datasets.\"    }}"
-}

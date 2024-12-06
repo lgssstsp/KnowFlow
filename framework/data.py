@@ -69,7 +69,7 @@ class DataAgent(BaseModel):
     def analyze_dataset(self, planning_results):
         """Analyze the dataset and return related statistics."""
         dataset_name = planning_results.get('Data', None)
-        path = 'F2GNN/data/'
+        path = 'NODE_LEVEL/data/'
         
         if not dataset_name:
             data_analysis = {}
@@ -167,7 +167,7 @@ class DataAgent(BaseModel):
         html_splitter = HTMLHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
         html_header_splits = html_splitter.split_text_from_file('PyG/pygtransforms.html')
         content = html_header_splits[2] # 1:General Transforms, 2: Graph Transforms ....
-        code_path = ['./F2GNN/','./LRGNN/','./ProfCF/']
+        code_path = ['./NODE_LEVEL/','./GRAPH_LEVEL/','./LINK_LEVEL/']
         for attempt in range(max_retries):
             response = llm_api.call_llm(select_path_prompt.format(fold_list=code_path,task_level=planning_results['Learning_tasks_on_graph']))
             selected_path = response['answer']

@@ -1,6 +1,0 @@
-{
-    "paper_name": "When Do GNNs Work: Understanding and Improving Neighborhood Aggregation",
-    "method_name": "Adaptive-layer module",
-    "method_summary": "This paper introduces a novel Adaptive-layer module that allows individual nodes in a Graph Neural Network (GNN) to perform different rounds of neighborhood aggregation based on their specific conditions. The design is motivated by the observation that neighborhood aggregation can be unhelpful or harmful in certain cases. The Adaptive-layer module utilizes two proposed metrics, neighborhood entropy and center-neighbor similarity, to gauge when and how much aggregation should occur. By assessing these metrics, the module can control the aggregation degree for each node, allowing for more tailored and effective information propagation in the GNN.",
-    "experiment_summary": "The experiments demonstrate that using the Adaptive-layer module significantly improves GNN performance across various datasets compared to traditional GNN structures. The analysis also reveals that the proposed metrics can successfully identify nodes that do not benefit from further neighborhood aggregation, thereby preventing excessive computation and mitigating the over-smoothing phenomenon. The experiments validate that the model can achieve strong performance while maintaining efficiency in terms of training time."
-}

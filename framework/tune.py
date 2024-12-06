@@ -77,7 +77,7 @@ class TuningAgent(BaseLLM, BaseModel):
             feature_engineering_str = feature_engineering_str + feature_engineering + ' '
 
 
-        if path in ['./F2GNN/']:
+        if path in ['./NODE_LEVEL/']:
             print('\n'+'='*25, "TUNING AGENT", '='*25+'\n')
             print('\n'+"*"*25, "START TUNE", "*"*25)
 
@@ -108,7 +108,7 @@ class TuningAgent(BaseLLM, BaseModel):
             print('\n'+'='*25, "TUNING AGENT END", '='*25+'\n')
 
         
-        elif path in ['./LRGNN/']:
+        elif path in ['./GRAPH_LEVEL/']:
             print('\n'+'='*25, "TUNE AGENT", '='*25+'\n')
 
             print("\nexecute code:")
@@ -140,7 +140,7 @@ class TuningAgent(BaseLLM, BaseModel):
             print('\n'+"="*25, 'TUNE SUMMARY END',"="*25+'\n')
             print('\n'+'='*25, "TUNING AGENT END", '='*25+'\n')
 
-        elif path in ['./ProfCF/']: 
+        elif path in ['./LINK_LEVEL/']: 
             tune_file = 'None'
             summary = 'The network architectures obtained through random search are already well-tuned, eliminating the need for further fine-tuning.'
 

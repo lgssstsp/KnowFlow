@@ -1,6 +1,0 @@
-{
-    "paper_name": "Predicting Information Pathways Across Online Communities",
-    "method_name": "INPAC (Information Pathway Across Online Communities)",
-    "method_summary": "INPAC is a dynamic graph framework designed to predict information pathways across online communities by utilizing Community Influence Graphs (CIGs). The model captures the temporal variability and multi-modal nature of information dissemination using visual features and metadata from videos shared on platforms like YouTube and Reddit. It incorporates three main components: community influence modeling, video content modeling, and dynamic modeling, allowing the integration of influence relationships and community interactions in a structured way.",
-    "experiment_summary": "The experimental results demonstrate that INPAC outperforms seven baseline methods in predicting the spread of information in both warm-start and cold-start scenarios across popular and less popular subreddits. The framework showed significant improvements in various metrics, indicating its effectiveness in addressing the challenges of community-level information pathway prediction."
-}
