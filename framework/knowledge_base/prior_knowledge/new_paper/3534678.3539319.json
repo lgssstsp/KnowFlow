@@ -1,0 +1,6 @@
+{
+    "paper_name": "On Structural Explanation of Bias in Graph Neural Networks",
+    "method_name": "REFEREE",
+    "method_summary": "REFEREE is a novel post-hoc explanation framework designed to provide instance-level structural explanations of bias in Graph Neural Networks (GNNs). It incorporates two types of explainers: a bias explainer and a fairness explainer. The bias explainer identifies edges in the computation graph that contribute most to the exhibited bias in a node’s prediction, while the fairness explainer identifies edges that enhance fairness. The framework introduces a principled metric for measuring bias at the node level and is optimized through a unified objective function that enforces faithfulness to the GNN's predictions while achieving its bias and fairness-related goals.",
+    "experiment_summary": "The paper presents extensive experiments on real-world datasets to validate the effectiveness of the proposed REFEREE framework. The experiments aim to evaluate how well REFEREE identifies edges that explain the bias and fairness of GNN predictions. The results demonstrate that REFEREE significantly outperforms existing methods in promoting fairness and reducing bias, highlighting its capability in delivering effective structural explanations for GNNs."
+}

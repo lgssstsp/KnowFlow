@@ -1,0 +1,6 @@
+{
+    "paper_name": "Maximizing Neutrality in News Ordering",
+    "method_name": "Algorithms for Detecting Cherry-Picked News Orderings",
+    "method_summary": "The paper introduces a formal framework to analyze news ordering neutrality. It focuses on two main problems: detecting cherry-picked news orderings and maximizing neutrality in news presentations. The authors present a randomized algorithm that employs random shuffling and tail inequalities to determine if a news ordering is statistically significantly deviating from neutrality. Furthermore, they define pairwise opinion priming (POP) and its implications on audience perception, leading to the development of algorithms to find orderings that can mitigate the risk of opinion priming.",
+    "experiment_summary": "The authors validate their theoretical results through experiments conducted on both real and synthetic datasets. They utilize a user study to confirm the presence of opinion priming effects. The experimental sections detail the challenges of evaluating news orderings, data collection methods for building the POP function, and results indicating potential cherry-picking behaviors in real news sources."
+}

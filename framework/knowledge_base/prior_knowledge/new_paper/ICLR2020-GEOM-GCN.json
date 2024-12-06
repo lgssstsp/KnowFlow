@@ -1,0 +1,6 @@
+{
+    "paper_name": "GEOM-GCN: GEOMETRIC GRAPH CONVOLUTIONAL NETWORKS",
+    "method_name": "Geom-GCN",
+    "method_summary": "Geom-GCN introduces a novel geometric aggregation scheme for graph neural networks that addresses the limitations of existing message-passing neural networks (MPNNs). It consists of three main modules: (1) Node embedding, which maps graph nodes to a continuous latent space while preserving the structural properties of the graph; (2) Structural neighborhood, which builds neighborhoods based on geometric relationships in the latent space, allowing the model to represent distant nodes; and (3) Bi-level aggregation, which updates node feature representations by effectively aggregating features from both graph-based and latent-space-based neighborhoods while ensuring permutation invariance.",
+    "experiment_summary": "The experimental results demonstrate that Geom-GCN achieves state-of-the-art performance on a variety of open datasets for graph transductive learning tasks. It performs effectively compared to existing models like GCN and GAT, highlighting the benefits of its geometric aggregation scheme in extracting more informative representations from graphs."
+}

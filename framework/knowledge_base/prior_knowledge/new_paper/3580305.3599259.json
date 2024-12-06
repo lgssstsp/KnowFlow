@@ -1,0 +1,6 @@
+{
+    "paper_name": "Approximation Algorithms for Size-Constrained Non-Monotone Submodular Maximization in Deterministic Linear Time",
+    "method_name": "LinearStream",
+    "method_summary": "The paper introduces several deterministic algorithms for size-constrained submodular maximization (SMCC) that efficiently operate in linear time. Key among these is LinearStream, which is a single-pass streaming algorithm designed to maximize a non-monotone submodular function under a cardinality constraint. LinearStream maintains an efficient querying strategy, aiming for a competitive ratio of 23.313 + ε, while ensuring that the operation is close to optimal both in terms of time complexity and memory usage.",
+    "experiment_summary": "The experimental evaluation compares the performance of the LinearStream algorithm against several existing algorithms on various datasets, focusing on the accuracy of solutions and oracle query efficiency. Results demonstrate that LinearStream consistently returns high-quality solutions relative to existing methods, with a notably reduced number of oracle queries, thereby showcasing its advantages in practical applications."
+}

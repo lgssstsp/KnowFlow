@@ -1,0 +1,6 @@
+{
+    "paper_name": "Reducing Exposure to Harmful Content via Graph Rewiring",
+    "method_name": "Gamine",
+    "method_summary": "Gamine is a greedy algorithm designed to minimize exposure to harmful content in recommendation systems through edge rewiring. The method formalizes exposure as the sum of costs associated with absorbing random walks starting from any node in a directed graph representing media items and recommendations. Unlike prior approaches that treat harmfulness as binary, Gamine models it as a real-valued cost assigned to nodes, allowing for a more nuanced assessment of harmful content. The algorithm utilizes strategies to efficiently prune unpromising rewiring candidates and operates under both constrained and unconstrained quality settings for recommendations.",
+    "experiment_summary": "The experimental evaluation demonstrates the effectiveness and efficiency of Gamine in reducing exposure to harmful content, achieving a 50% reduction in initial exposure on YouTube graphs with only 100 rewiring operations while maintaining relevance in recommendations. The experiments also highlight Gamine's scalability and robustness compared to previous methods, confirming its capacity to perform well across a variety of settings, including synthetic and real-world datasets."
+}

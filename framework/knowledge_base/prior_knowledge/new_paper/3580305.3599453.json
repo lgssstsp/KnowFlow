@@ -1,0 +1,6 @@
+{
+    "paper_name": "One for All: Unified Workload Prediction for Dynamic Multi-tenant Edge Cloud Platforms",
+    "method_name": "DynEformer",
+    "method_summary": "DynEformer is an end-to-end framework designed specifically for workload prediction in dynamic multi-tenant edge cloud platforms (MT-ECP). It integrates global pooling to identify global application patterns while ensuring local workload predictions are adapted based on these patterns. The model enhances prediction robustness through static content awareness and employs adaptive information merging mechanisms, allowing it to effectively tackle diverse workloads and dynamic behaviors without the need for multiple independent models. The approach utilizes historical and contextual static features to improve overall prediction accuracy.",
+    "experiment_summary": "The experiments involve testing DynEformer across five real-world datasets related to workload from a commercial edge cloud platform. The model demonstrated state-of-the-art performance in workload prediction, significantly outperforming existing methods, especially in dynamic scenarios involving application switching and the addition of new entities. It achieved a relative improvement in predictive accuracy, showcasing its robustness in the face of varying workloads under real-time conditions."
+}

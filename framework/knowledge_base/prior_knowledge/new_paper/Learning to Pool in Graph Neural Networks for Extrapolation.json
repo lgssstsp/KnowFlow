@@ -1,0 +1,6 @@
+{
+    "paper_name": "Learning to Pool in Graph Neural Networks for Extrapolation",
+    "method_name": "Generalized Norm-based Pooling (GNP)",
+    "method_summary": "GNP is a trainable pooling function designed for Graph Neural Networks (GNNs) that generalizes existing pooling functions like sum, max, min, and average. By formulating pooling as a flexible Lp-norm-like function, GNP allows for parameter learning in end-to-end training. It incorporates both positive and negative p values, enhancing its expressiveness and enabling it to adapt to various tasks effectively. Importantly, GNP provides minimal overhead in terms of model complexity compared to existing pooling methods.",
+    "experiment_summary": "The experiments demonstrated the effectiveness of GNP across various graph-level, node-level, and set-related tasks. GNNs employing GNP exhibited exceptional extrapolation abilities, often outperforming other pooling configurations, including those with carefully tuned combinations of existing pooling functions. Specific tasks highlighted include counting nodes in graphs and estimating values related to node degrees, where GNP consistently showed superior generalization capabilities."
+}

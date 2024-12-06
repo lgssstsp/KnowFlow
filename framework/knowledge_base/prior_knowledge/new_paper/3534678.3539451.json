@@ -1,0 +1,6 @@
+{
+    "paper_name": "Fair Labeled Clustering",
+    "method_name": "Fair Labeled Clustering Techniques",
+    "method_summary": "The paper introduces the problem of fairness in labeled clustering, extending the concept of group fairness in clustering algorithms. It addresses two settings: Labeled Clustering with Assigned Labels (LCAL) and Labeled Clustering with Unassigned Labels (LCUL). The LCAL method shows optimal clustering can be achieved in polynomial time with constant labels, while the LCUL method discusses its NP-hardness under certain conditions and offers a randomized algorithm for achieving optimal clustering within fairness constraints. The emphasis is on ensuring fairness not just within individual clusters but across assigned labels, promoting proportional representation in outcomes.",
+    "experiment_summary": "The paper includes experiments using real-world datasets such as the Adult and Credit Card datasets to validate the effectiveness of the proposed algorithms. Comparisons are made against fair clustering algorithms and nearest center methods. Results indicate that the proposed methods achieve lower costs while maintaining fairness, demonstrating robust performance with minimal proportional violations across varying cluster configurations."
+}

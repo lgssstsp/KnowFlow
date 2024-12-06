@@ -1,0 +1,6 @@
+{
+    "paper_name": "Improving Robustness of Graph Neural Networks with Heterophily-Inspired Designs",
+    "method_name": "Heterophily-Inspired Designs",
+    "method_summary": "The paper introduces two architectural designs for enhancing the robustness of Graph Neural Networks (GNNs) against adversarial attacks by addressing the sensitivity of GNNs to heterophily. The first design involves using separate aggregators for ego- and neighbor-embeddings, allowing the ego-embedding to be less affected by structural perturbations. The second design entails reducing the scope of aggregation, such that the GNN layers aggregate information primarily from immediate neighbors rather than higher-order connections. These modifications aim to improve the performance of GNNs when faced with adversarially induced structural changes.",
+    "experiment_summary": "The empirical evaluations demonstrate that GNNs incorporating the proposed designs show significant improvements in robustness, with a reported gain in average performance of up to 24.99% compared to the best-performing unvaccinated model under targeted attacks, while maintaining lower computational overhead than existing defense mechanisms. Combining these designs with established vacunation strategies further enhances robustness, yielding state-of-the-art performance under various attack scenarios."
+}

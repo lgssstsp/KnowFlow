@@ -1,0 +1,6 @@
+{
+    "paper_name": "Fairness-Aware Continuous Predictions of Multiple Analytics Targets in Dynamic Networks",
+    "method_name": "Fairness-Aware Data Filtering and Training Scheduling in Dynamic Graph Neural Networks",
+    "method_summary": "The proposed architecture consists of a backend model utilizing Dynamic Graph Neural Networks (DGNN) to capture dynamic network states while responding to multiple Continuous Analytics Targets (CATs). The method introduces a data filtering algorithm that selects a statistically optimal subset of data points to feed into the frontend models for generating predictions. Fairness is ensured through a training scheduling algorithm that evaluates the individual fairness of query results, aiming to provide equitable accuracy across different CATs and users. Mathematical guarantees of fairness estimation are established using Lipschitz bias metrics.",
+    "experiment_summary": "The experiments demonstrate the effectiveness, efficiency, fairness, extensibility, and adaptability of the proposed method using five real-world datasets. The results indicate improved performance in terms of accuracy and fairness, with experiments addressing various research questions, including the scalability of processing dynamic networks and the accuracy of model predictions."
+}

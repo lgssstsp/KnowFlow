@@ -1,0 +1,6 @@
+{
+    "paper_name": "STRUM: Extractive Aspect-Based Contrastive Summarization",
+    "method_name": "STRUM",
+    "method_summary": "STRUM is a novel method designed for extractive aspect-based contrastive summarization, aimed at automating comparative decision-making by providing structured summaries that compare relevant aspects of different entities. The methodology follows a four-step process: (1) acquiring relevant webpages, (2) extracting aspects and corresponding values using a fine-tuned T5-based model, (3) merging extracted aspects to balance granularity, and (4) selecting source sentences that maximize contrast for each aspect, leveraging a second fine-tuned T5-based model for natural language inference. This method allows for generalization across domains without requiring human-written summaries or predefined aspect lists.",
+    "experiment_summary": "The experimental section presents examples showcasing STRUM's performance in various domains, highlighting its ability to generate contrasting summaries for pairs of entities, such as comparing cars and hiking trails. The results demonstrate the effectiveness of STRUM in constructing factually correct and meaningful summaries without hallucinations, although it notes limitations such as the model's performance on longer texts and the need for handling user-submitted reviews."
+}

@@ -1,0 +1,6 @@
+{
+    "paper_name": "Optimizing Traffic Control with Model-Based Learning: A Pessimistic Approach to Data-Efficient Policy Inference",
+    "method_name": "A-DAC",
+    "method_summary": "A-DAC is a model-based offline reinforcement learning framework that infers a Markov Decision Process (MDP) from traffic signal control data to learn policies efficiently. It incorporates pessimism to adjust reward functions adaptively, thus managing under-explored regions and enhancing the robustness of policy learning. The method focuses on maximizing long-term expected rewards while allowing for better generalization from the available experience data.",
+    "experiment_summary": "The experiments evaluate A-DAC's performance on both single-intersection and multi-intersection traffic scenarios. It proceeds with comparisons against various baselines, including model-free RL approaches and previous versions of the DAC framework. The results demonstrate that A-DAC consistently outperforms other algorithms, showing significant improvements in traffic control efficiency with minimal computational overhead."
+}

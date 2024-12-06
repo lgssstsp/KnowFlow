@@ -1,0 +1,6 @@
+{
+    "paper_name": "CF-GODE: Continuous-Time Causal Inference for Multi-Agent Dynamical Systems",
+    "method_name": "CF-GODE (CounterFactual Graph Ordinary Differential Equations)",
+    "method_summary": "CF-GODE is a causal model that estimates continuous-time counterfactual outcomes in multi-agent dynamical systems by modeling a graph where nodes represent units and edges capture their interactions. This model employs Treatment-Induced Graph ODE, which incorporates treatments as inputs to predict potential outcomes over time. To address confounding bias from time-varying confounders and neighbor influences, two domain adversarial learning based objectives are proposed. These ensure balanced latent representation trajectories that are independent of treatments and interference, thus validating its causal nature.",
+    "experiment_summary": "Extensive experiments demonstrate that CF-GODE outperforms existing models for counterfactual outcome estimation in multi-agent settings, particularly emphasizing the impact of balancing treatments and interference. The results confirm the theoretical efficacy of the model in handling confounders and emphasize its generalizability to new dynamical systems."
+}

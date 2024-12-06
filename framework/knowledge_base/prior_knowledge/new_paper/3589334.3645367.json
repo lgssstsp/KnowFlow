@@ -1,0 +1,6 @@
+{
+    "paper_name": "Graph Contrastive Learning Meets Graph Meta Learning: A Unified Method for Few-shot Node Tasks",
+    "method_name": "Contrastive Few-Shot Node Classification (COLA)",
+    "method_summary": "COLA integrates the strengths of contrastive learning and meta-learning for few-shot node classification tasks. It constructs meta-tasks by leveraging semantically similar nodes from augmented graphs without requiring label information. By utilizing graph augmentation techniques, COLA enhances the diversity and robustness of selected support sets, facilitating better generalization. The process involves using three distinct augmented views to ensure that the selected support nodes are semantically coherent with the query nodes, which helps mitigate overfitting.",
+    "experiment_summary": "The experiments validate COLA's superiority over traditional metalearning methods and various graph contrastive learning approaches across multiple benchmark datasets. Performance metrics highlight significant gains attributed to the comprehensive use of graph nodes and effective data augmentation strategies, establishing state-of-the-art results in few-shot node classification tasks."
+}

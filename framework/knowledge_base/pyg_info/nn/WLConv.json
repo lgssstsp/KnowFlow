@@ -1,0 +1,9 @@
+{
+    "name": "WLConv",
+    "description": "The Weisfeiler Lehman (WL) operator from the \"A Reduction of a Graph to a Canonical Form and an Algebra Arising During this Reduction\" paper.",
+    "link": "../generated/torch_geometric.nn.conv.WLConv.html#torch_geometric.nn.conv.WLConv",
+    "paper_link": "https://www.iti.zcu.cz/wl2018/pdf/wl_paper_translation.pdf",
+    "paper_name": "\"A Reduction of a Graph to a Canonical Form and an Algebra Arising During this Reduction\"",
+    "Local Paper PDF Path": "knowledge_base\\pyg_info\\nn\\WLConv.pdf",
+    "Paper Summary": "{    \"GNN_Design\": {        \"agg_ops\": \"Details about aggregation operators\",        \"skip_connections\": \"Details about skip-connection designs\",        \"layer_info_fusion\": \"How information is fused across layers\",        \"num_layers\": \"Total number of layers\",        \"hyperparameters\": \"Specific hyperparameters used\",        \"activation\": \"Type of activation functions used\"    },    \"Experimental_Setup\": {        \"datasets\": \"List and summary of datasets used\",        \"dataset_summary\": \"Detailed descriptions of each dataset\",        \"baseline\": \"Baseline models used for comparison\",        \"performance_comparisons\": \"Detailed results of performance metrics compared to baselines\"    }}This response assumes there is no specific content related to GNN architecture or experimental setup details available in the provided text content of the paper. There is no discussion of graph neural networks, their aggregation operators, skip-connection designs, or experimental validations that involve datasets, baseline models, or performance comparisons since the text focuses on the theoretical aspects of algebraic graph reductions to canonical forms."
+}

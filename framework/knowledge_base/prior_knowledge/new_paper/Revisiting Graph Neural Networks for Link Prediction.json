@@ -1,0 +1,6 @@
+{
+    "paper_name": "Revisiting Graph Neural Networks for Link Prediction",
+    "method_name": "Labeling Trick",
+    "method_summary": "The paper discusses a novel approach called the 'labeling trick' for improving the performance of Graph Neural Networks (GNNs) in link prediction tasks. The labeling trick involves assigning labels to nodes based on their relationships with the target link, thus allowing the GNN to learn more expressive link representations. The major limitation identified in traditional approaches, such as Graph Autoencoders (GAE), is that they aggregate node representations directly, which leads to indistinguishable representations for isomorphic links. The labeling trick helps overcome this limitation, enabling GNNs to better differentiate isomorphic and non-isomorphic links by using enriched node features.",
+    "experiment_summary": "The experiments conducted in the paper validate the effectiveness of the labeling trick using several datasets from the Open Graph Benchmark (OGB). The results show that GNNs utilizing the labeling trick outperform traditional methods and achieve state-of-the-art results on multiple datasets. The findings demonstrate significant improvements in link prediction performance, particularly showing that GNNs with the labeling trick can achieve up to 195% gains over plain GNNs."
+}

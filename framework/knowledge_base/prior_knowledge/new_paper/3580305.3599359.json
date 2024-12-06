@@ -1,0 +1,6 @@
+{
+    "paper_name": "GAT-MF: Graph Attention Mean Field for Very Large Scale Multi-Agent Reinforcement Learning",
+    "method_name": "Graph Attention Mean Field (GAT-MF)",
+    "method_summary": "GAT-MF converts agent-agent interactions into interactions between each agent and a weighted mean field to reduce computational complexity significantly. The method models the dynamics of these interactions accurately and uses a graph attention mechanism to capture the diverse and time-varying strength of interactions, ensuring precise representation without prior knowledge of interaction strengths.",
+    "experiment_summary": "The experiments validate the efficacy of the GAT-MF method through extensive testing in both manual grid-world scenarios and real-world metropolitan tasks with over 3000 agents. The results indicate a performance improvement of up to 42.7% compared to the best baseline method, along with substantial reductions in training time and memory usage."
+}

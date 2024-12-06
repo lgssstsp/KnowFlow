@@ -1,0 +1,6 @@
+{
+    "paper_name": "Graph Neural Networks with Heterophily",
+    "method_name": "CPGNN",
+    "method_summary": "CPGNN is a novel framework that incorporates a compatibility matrix to capture levels of heterophily and homophily in graphs. It generalizes existing Graph Neural Networks (GNNs) to handle situations where connected nodes originate from different classes. The framework consists of two main stages: prior belief estimation, where an initial class label belief is computed, and compatibility-guided propagation, where beliefs are updated through interactions informed by the learned compatibility matrix. This end-to-end learning approach enables effective modeling of relationship dynamics between differently classified nodes.",
+    "experiment_summary": "The experiments demonstrate CPGNN's effectiveness across various datasets, highlighting its superior performance in both heterophily and homophily settings compared to baseline methods. CPGNN variants achieved state-of-the-art results while using significantly less training data in realistic experimental setups, confirming the advantages of incorporating the compatibility matrix."
+}

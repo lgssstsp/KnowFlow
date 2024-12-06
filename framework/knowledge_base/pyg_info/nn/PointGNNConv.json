@@ -1,0 +1,9 @@
+{
+    "name": "PointGNNConv",
+    "description": "The PointGNN operator from the \"Point-GNN: Graph Neural Network for 3D Object Detection in a Point Cloud\" paper.",
+    "link": "../generated/torch_geometric.nn.conv.PointGNNConv.html#torch_geometric.nn.conv.PointGNNConv",
+    "paper_link": "https://arxiv.org/abs/2003.01251",
+    "paper_name": "\"Point-GNN: Graph Neural Network for 3D Object Detection in a Point Cloud\"",
+    "Local Paper PDF Path": "knowledge_base\\pyg_info\\nn\\PointGNNConv.pdf",
+    "Paper Summary": "{    \"GNN_Design\": {        \"agg_ops\": \"Max function for robust feature aggregation\",        \"skip_connections\": \"Residual connections in the graph neural network layers\",        \"layer_info_fusion\": \"Iterative updates using edge-feature aggregation with auto-registration\",        \"num_layers\": \"Three iterations of the graph neural network\",        \"hyperparameters\": \"Max neighbors per vertex set to 256, voxel down-sampling size 0.8m for training, 0.4m for inference\",        \"activation\": \"Multi-Layer Perceptrons (MLPs) for computation, specific activations not detailed\"    },    \"Experimental_Setup\": {        \"datasets\": \"KITTI object detection benchmark\",        \"dataset_summary\": \"Dataset contains 7481 training samples and 7518 testing samples, evaluating 3D objects like Cars, Pedestrians, and Cyclists\",        \"baseline\": \"Comparison against approaches like UberATG-ContFuse, AVOD-FPN, F-PointNet, VoxelNet, SECOND\",        \"performance_comparisons\": \"Point-GNN achieves leading accuracy on Car detection (Easy 88.33, Moderate 79.47, Hard 72.29) and Cyclist detection (Moderate 63.48, Hard 57.08) using only LiDAR data\"    }}"
+}

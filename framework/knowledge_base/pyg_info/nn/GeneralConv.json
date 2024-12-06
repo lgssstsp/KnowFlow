@@ -1,0 +1,9 @@
+{
+    "name": "GeneralConv",
+    "description": "A general GNN layer adapted from the \"Design Space for Graph Neural Networks\" paper.",
+    "link": "../generated/torch_geometric.nn.conv.GeneralConv.html#torch_geometric.nn.conv.GeneralConv",
+    "paper_link": "https://arxiv.org/abs/2011.08843",
+    "paper_name": "\"Design Space for Graph Neural Networks\"",
+    "Local Paper PDF Path": "knowledge_base\\pyg_info\\nn\\GeneralConv.pdf",
+    "Paper Summary": "{    \"GNN_Design\": {        \"agg_ops\": \"AGG ∈ {MEAN, MAX, SUM}, with SUM found most empirically successful.\",        \"skip_connections\": \"Two types: residual connections (SKIP-SUM) and dense connections (SKIP-CAT).\",        \"layer_info_fusion\": \"Layers are modular with options for pre/post-process using Multilayer Perceptron (MLP) layers.\",        \"num_layers\": \"Message passing layers considered: {2, 4, 6, 8}.\",        \"hyperparameters\": \"Batch size ∈ {16, 32, 64}, learning rate ∈ {0.1, 0.01, 0.001}, optimizers: SGD and ADAM, training epochs ∈ {100, 200, 400}.\",        \"activation\": \"ACT ∈ {RELU, PRELU, SWISH}, with PRELU as the most favorable choice.\"    },    \"Experimental_Setup\": {        \"datasets\": [            \"12 synthetic node classification, 8 synthetic graph classification, 6 real-world node classification, 6 real-world graph classification\"        ],        \"dataset_summary\": \"Synthetic tasks generated with small-world and scale-free graphs, covering a range of graph statistics and feature/label combinations. Real-world tasks span citation networks and bioinformatics datasets.\",        \"baseline\": \"Standard GNN models like GCN with different numbers of message passing layers.\",        \"performance_comparisons\": \"Designs from the proposed GNN design space showed superiority over standard GCNs in 24 out of 32 tasks evaluated, achieving state-of-the-art in new, challenging tasks.\"    }}"
+}

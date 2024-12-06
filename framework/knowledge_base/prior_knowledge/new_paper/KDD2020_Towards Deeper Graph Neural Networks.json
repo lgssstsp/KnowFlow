@@ -1,0 +1,6 @@
+{
+    "paper_name": "Towards Deeper Graph Neural Networks",
+    "method_name": "Deep Adaptive Graph Neural Network (DAGNN)",
+    "method_summary": "This paper introduces the Deep Adaptive Graph Neural Network (DAGNN) to address performance degradation in deep graph neural networks (GNNs), particularly due to the over-smoothing issue. The key insight is to decouple representation transformation and propagation, allowing for larger receptive fields without sacrificing performance. DAGNN incorporates an adaptive adjustment mechanism to balance information from local and global neighborhoods, enabling a more discriminative representation of nodes. It employs a shared MLP network for feature transformation followed by a symmetrical normalization propagation mechanism to gather neighborhood information. This design allows DAGNN to effectively summarize information while remaining parameter-efficient.",
+    "experiment_summary": "Extensive experiments on various datasets, including citation, co-authorship, and co-purchase datasets, demonstrate that DAGNN outperforms state-of-the-art methods in node classification tasks, particularly when the number of training samples is limited. The results indicate that DAGNN achieves significant improvements in accuracy over traditional methods and exhibits robustness across different training setups."
+}

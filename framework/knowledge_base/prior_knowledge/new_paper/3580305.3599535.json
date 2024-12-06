@@ -1,0 +1,6 @@
+{
+    "paper_name": "UCEpic: Unifying Aspect Planning and Lexical Constraints for Generating Explanations in Recommendation",
+    "method_name": "UCEpic",
+    "method_summary": "UCEpic integrates aspect planning and lexical constraints into a single framework for generating personalized explanations in recommendation systems. This model utilizes an insertion-based generation technique, incorporating a robust pre-training method that equips the model to handle various lexical constraints effectively. Aspect-related tokens are generated as an initial step in the insertion process, allowing for a natural integration of personalized references and key phrases from user reviews. The approach aims to enhance the quality, diversity, and informativeness of the generated explanations.",
+    "experiment_summary": "The experiments demonstrated that UCEpic significantly outperforms prior models in terms of relevance, coherence, and informativeness of generated explanations. Metrics such as BLEU, METEOR, and ROUGE-L were employed for automatic evaluation, alongside human evaluations assessing relevance, coherence, and informativeness. Results indicated that UCEpic successfully incorporates specific information from given lexical constraints, leading to more specific, diverse, and coherent output compared to traditional models."
+}

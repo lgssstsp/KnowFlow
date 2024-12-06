@@ -1,0 +1,6 @@
+{
+    "paper_name": "Tail-GNN: Tail-Node Graph Neural Networks",
+    "method_name": "Tail-GNN",
+    "method_summary": "Tail-GNN is a novel graph neural network (GNN) designed specifically for enhancing the embeddings of tail nodes in long-tailed graph structures. It introduces a concept called transferable neighborhood translation, which models the relational ties between a target node and its neighboring nodes. Tail-GNN learns neighborhood translation from structurally rich head nodes, which is then transferred to structurally limited tail nodes to improve their representations. The model is based on an adaptation mechanism that localizes global translations to account for varying neighborhood contexts for each node, allowing it to address the challenges posed by limited structural information in tail nodes.",
+    "experiment_summary": "The experiments demonstrate the effectiveness of Tail-GNN through evaluations on five benchmark datasets, where it significantly outperformed state-of-the-art baseline models in tail node classification and link prediction tasks. The proposed method was able to leverage the relationships between head and tail nodes to enhance the learning of tail node representations, achieving state-of-the-art performance on various evaluation metrics."
+}

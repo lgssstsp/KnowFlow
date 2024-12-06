@@ -1,0 +1,6 @@
+{
+    "paper_name": "Discovering Dynamic Causal Space for DAG Structure Learning",
+    "method_name": "CASPER",
+    "method_summary": "CASPER proposes a dynamic causal space for DAG structure learning, integrating graph structure into the score function to reflect the causal distance between estimated and ground-truth DAGs. It emphasizes a DAG-ness aware scoring mechanism to enhance the learning process and model robustness. The key components include graph structure encoding, adaptability in optimization via changes in DAG-ness consideration, and robustness against noise in observational data. CASPER aims to dynamically modify the score function to improve DAG structure learning accuracy.",
+    "experiment_summary": "Extensive experiments validate CASPER's superiority over state-of-the-art causal discovery methods. The results show that CASPER consistently outperforms competing models across both synthetic and real-world datasets, significantly improving accuracy and robustness in DAG structure learning under varied conditions, including noise and graph density."
+}

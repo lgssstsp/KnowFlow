@@ -1,0 +1,6 @@
+{
+    "paper_name": "Meta-Learned Metrics over Multi-Evolution Temporal Graphs",
+    "method_name": "Temp-GFSM",
+    "method_summary": "Temp-GFSM is a temporal graph metric learning framework designed to learn an effective distance metric for classifying temporal graphs, addressing the unique challenges posed by their dynamic nature. The framework comprises three key components: Multi-Time Evolution modeling to capture diverse dynamic patterns of a temporal graph; Multi-Time Attention modeling to assign different weights to various evolution patterns; and a Temporal Graph Few-Shot Metric Learning process that leverages only a few labeled graphs to derive an accurate and adaptable metric. It is intended to enable high accuracy for seen classes and generalization to unseen classes in graph classification tasks through a bi-level optimization approach.",
+    "experiment_summary": "The experiments demonstrated the effectiveness of Temp-GFSM in classifying temporal graphs across various domains, showcasing its superior performance compared to state-of-the-art baselines. Detailed evaluations indicated improvements in classification accuracy and convergence speed, affirming its capability in adapting to unseen classes through few-shot learning."
+}

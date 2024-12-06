@@ -1,0 +1,6 @@
+{
+    "paper_name": "Topology-Aware Graph Pooling Networks",
+    "method_name": "Topology-Aware Pooling (TAP) Layer",
+    "method_summary": "The TAP layer incorporates graph topology into pooling operations through a two-stage voting process consisting of local and global voting. Local voting assesses the importance of each node based on its similarity scores with neighboring nodes, thus directly considering local graph structure. Global voting then measures the importance of each node based on its relationship within the entire graph. The final ranking score combines both voting scores, and a graph connectivity term is added to enhance connectivity in coarsened graphs, addressing potential isolated nodes and improving overall representational power.",
+    "experiment_summary": "Experiments demonstrate that TAPNets consistently outperform previous methods in graph classification tasks across various datasets. Comparison results illustrate marked improvements in accuracy, indicating the effectiveness of the proposed TAP layer in capturing topology information and improving node sampling processes."
+}

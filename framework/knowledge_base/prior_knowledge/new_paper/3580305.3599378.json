@@ -1,0 +1,6 @@
+{
+    "paper_name": "Hierarchical Proxy Modeling for Improved HPO in Time Series Forecasting",
+    "method_name": "H-Pro",
+    "method_summary": "H-Pro is a novel technique for hyperparameter optimization (HPO) in hierarchical time series forecasting. It leverages the predictability of higher-level aggregated time series to optimize low-level base forecasters. The method utilizes proxy forecasts from higher-level models instead of traditional validation windows, addressing the test-validation mismatch often encountered in forecasting. H-Pro can be applied to any off-the-shelf machine learning model, making it versatile for different forecasting contexts by ensuring coherent and accurate forecasts at all levels of the hierarchy.",
+    "experiment_summary": "The experiments conducted demonstrated the effectiveness of H-Pro through extensive evaluations on five publicly available hierarchical forecasting datasets. The results showed that H-Pro outperformed several state-of-the-art methods across various datasets, achieving competitive performance in the Tourism-L dataset without requiring model-specific enhancements. Additionally, H-Pro surpassed the winning method of the M5 forecast accuracy competition, highlighting its robustness and scalability compared to conventional temporal cross-validation approaches."
+}
