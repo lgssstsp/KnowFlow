@@ -21,4 +21,4 @@
 
 # Run Example
     cd framework
-    python main.py --dataset actor --knowledge_types ogb pyg_info_nn new_paper --knowledge_percentage 1.0
+    python main.py --dataset actor
