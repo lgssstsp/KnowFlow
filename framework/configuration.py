@@ -150,7 +150,7 @@ class ConfigurationAgent(BaseModel):
                     try:
                         data = ast.literal_eval(json_str)
                     except (ValueError, SyntaxError) as e:
-                        print(f"Index {index} Error：{e}")
+                        print(f"Index {index} Error:{e}")
                         continue  
                 name = data.get('name', '')
                 description = data.get('description', '')
@@ -164,9 +164,7 @@ class ConfigurationAgent(BaseModel):
             if self.args.num_cases > 0:
                 if self.args.is_knowledge_types_filter == True:
                     ###retrive###
-                    
-
-                    
+ 
                     cases = self.retriever.search(op_select_prompt.format(op_sets=op_sets, task_plan=task_plan, dict=micro_dict), 
                                                 'prior', 
                                                 top_k=self.args.num_cases)
@@ -230,7 +228,6 @@ class ConfigurationAgent(BaseModel):
                     for index, (case, distance, sub_type) in enumerate(cases, start=1):
                         cases_prompt = cases_prompt + f'This is the {index}-th case for your reference:\n' + case
                 
-                ###retrive by keyword###
                 results = self.retriever.search_by_keyword(task_plan['Data'], 'prior')
                 for result in results:
                     print('\nThis is a case related to the handled dataset:')
@@ -243,8 +240,6 @@ class ConfigurationAgent(BaseModel):
             
             prompt = op_select_prompt.format(op_sets=final_nn_prompt, task_plan=task_plan, dict=micro_dict) + cases_prompt
             
-            #####################
-            # time.sleep(15)
             response = llm_api.call_llm(prompt)            
             selected_aggregation_op = response['answer']
             selected_aggregation_op = selected_aggregation_op.replace('\n', '').replace('```', '').replace('\\', '')

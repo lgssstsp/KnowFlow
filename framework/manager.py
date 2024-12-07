@@ -33,8 +33,8 @@ class ManagerAgent(BaseModel):
         2. Learning_task_types: Ascertain whether the task is a regression or classification problem, or any other type of learning task. Clarify the nature of the learning challenge.
 
         3. Evaluation_metric: Identify the evaluation metric that is desired or implied in the user's request for gauging the success of the learning task.
-        If the task is a classification problem, such as predicting categories or labels or domains, suggest metrics like Accuracy, Precision, Recall, or F1-Score.
-        If the task is a regression problem, such as predicting numerical values, recommend metrics like Mean Squared Error (MSE), or Root Mean Squared Error (RMSE).
+        If the task is a classification problem, such as predicting categories or labels or domains, suggest metrics like Accuracy, Precision, Recall, F1-Score or others.
+        If the task is a regression problem, such as predicting numerical values, recommend metrics like Mean Squared Error (MSE), Root Mean Squared Error (RMSE) or others.
         In cases where the user has not specified a preference for any metric, provide a rationale for your recommended metric based on the task's details and the desired outcomes. 
 
         4. Preference: Note any specific preferred operations that the user mentions. 
