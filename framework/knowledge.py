@@ -15,7 +15,6 @@ import random
 
 
 class KnowledgeAgent:
-    
     def __init__(self, args, base_dir='knowledge_base'):
         self.ogb_urls = [
             "https://ogb.stanford.edu/docs/leader_nodeprop",
@@ -27,8 +26,8 @@ class KnowledgeAgent:
         self.pyg_url = 'https://pytorch-geometric.readthedocs.io/en/latest/'
         
         # google search engine api key
-        self.api_key = "google search engine api key"
-        self.cse_id = "google search engine cse_id"
+        self.api_key = "your_api_key"
+        self.cse_id = "your_cse_id"
 
 
         self.base_dir = base_dir     
@@ -46,33 +45,6 @@ class KnowledgeAgent:
         
         os.makedirs(self.experiment_knowledge_base, exist_ok=True)
         os.makedirs(self.prior_knowledge_base, exist_ok=True)
-        
-        self.agent_profile = """
-		# Profile
-		As a Graph Learning Specialist, you are tasked with extracting and retrieving knowledge to enhance graph learning frameworks using advanced capabilities like RAG techniques. You are equipped with tools to read various file types and summarize relevant information to support GNN design based on specific learning requirements.
-		
-		# Objective
-		Your primary task is to identify knowledge requirements, extract pertinent information from diverse resources, and retrieve specific knowledge to aid different graph learning procedures.
-		
-		# Functions
-		1. **Knowledge Extraction**
-		- **Purpose**: To gather and classify knowledge from multiple resources to provide both coarse-grained and fine-grained insights into graph learning.
-		- **Input**: Diverse resources including academic papers, technical reports, and benchmark results.
-		- **Output**: Summarized knowledge in structured formats, saved on hardware devices for later retrieval.
-		
-		2. **Knowledge Retrieval**
-		- **Purpose**: To dynamically retrieve relevant knowledge based on specific requirements of graph learning agents using encoded embedding vectors.
-		- **Input**: Encoded queries reflecting the needs of various graph learning agents.
-		- **Output**: Retrieved knowledge that is semantically aligned with the input requirements, enhancing the graph learning processes.
-		
-		3. **Query Construction**
-		- **Purpose**: To construct effective retrieval queries by integrating specific keywords and agent requirements to align with learning objectives.
-		- **Input**: Agent-specific information and keywords based on the graph learning tasks.
-		- **Output**: Constructed queries that guide the retrieval of relevant knowledge.
-		
-		# Human Expertise
-		Human experts critically assess the relevance and accuracy of extracted knowledge, fine-tune retrieval queries, and ensure the effective use of extracted and retrieved knowledge in enhancing understanding of tasks and graph structures.
-        """
   
 
            
@@ -99,7 +71,7 @@ class KnowledgeAgent:
         pdf_files = [f for f in os.listdir(background_dir) if f.endswith('.pdf')]
         
         for pdf_file in pdf_files:
-            pdf_dict = {'NODE_LEVEL.pdf': 'node-level', 'GRAPH_LEVEL.pdf': 'graph-level', 'LINK_LEVEL.pdf': 'link-level'}
+            pdf_dict = {'NODE_LEVEL.pdf': 'node-level', 'LINK_LEVEL.pdf': 'graph-level', 'GRAPH_LEVEL.pdf': 'link-level'}
             pdf_path = os.path.join(background_dir, pdf_file)
 
             text = self.extract_text_from_pdf(pdf_path)
@@ -128,7 +100,6 @@ class KnowledgeAgent:
         """Load knowledge base files into cache based on the knowledge type"""
         if knowledge_type == 'prior':
 
-            
             total_loaded = 0
             for k_type in self.args.knowledge_types:
                 self.prior_knowledge_cache[k_type] = {}
@@ -179,7 +150,7 @@ class KnowledgeAgent:
             dataset_link = header.find('a', href=True)['href'] if header.find('a', href=True) else ''
             next_table = header.find_next('table')
             if next_table:
-                rows = next_table.find_all('tr')[1:]  
+                rows = next_table.find_all('tr')[1:]  # 跳过表头
                 for row in rows:
                     cols = row.find_all('td')
                     if cols:
@@ -225,6 +196,7 @@ class KnowledgeAgent:
             self.prior_knowledge_cache.update(new_data)
         else:
             raise ValueError("Invalid knowledge type provided.")
+        # print(f"Updated {knowledge_type} knowledge cache with {len(new_data)} items.")
 
     def select_top_k_methods(self, leaderboard_data, k=5):
         """Select the top-K methods for each task and dataset"""
@@ -421,7 +393,7 @@ class KnowledgeAgent:
             'q': query,
             'key': self.api_key,
             'cx': self.cse_id,
-            'num': num_results  
+            'num': num_results  # 返回结果数量
         }
         response = requests.get(base_url, params=params)
         items = response.json().get('items', [])
@@ -610,7 +582,6 @@ class KnowledgeAgent:
         if model_type:
             background_file_path = os.path.join(self.base_dir, 'background', f'{model_type}.json')
             
-
             while True:
                 current_path = os.getcwd()
                 # print("Current working directory:", current_path)
@@ -632,9 +603,11 @@ class KnowledgeAgent:
 
         
         filename = f"{description.replace(' ', '_')}_{int(time.time())}.json"  
+        # filepath = os.path.join(self.experiment_knowledge_base, filename)
 
         current_directory = os.getcwd()
         
+        # parent_directory = os.path.dirname(current_directory)
 
         filepath = os.path.join(current_directory, self.experiment_knowledge_base, filename)
         
@@ -705,14 +678,18 @@ class KnowledgeAgent:
                 if match:
                     json_str = match.group()
                     try:
+                        # print("json_str done")
                         json_data = json.loads(json_str)
-
+                        # print("json_data done")
+                        # print(json_data)
+                        # time.sleep(1000)
                         summary = {
                             'paper_name': json_data.get('paper_name', ''),
                             'method_name': json_data.get('method_name', ''),
                             'method_summary': json_data.get('method_summary', ''),
                             'experiment_summary': json_data.get('experiment_summary', '')
                         }
+                        # print("summary:",summary)
 
                         output_file_path = os.path.join(output_directory, f"{pdf_file.replace('.pdf', '.json')}")
                         print("output_file_path:",output_file_path)
@@ -722,4 +699,3 @@ class KnowledgeAgent:
                         break
                     except Exception as e:
                         print(f"An error occurred: {e}")
-

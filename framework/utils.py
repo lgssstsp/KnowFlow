@@ -13,6 +13,7 @@ def knowledge_preprocess(knowledge_agent, planning_results):
     knowledge_agent.load_knowledge_base('prior')
     knowledge_agent.load_knowledge_base('experiment')
     knowledge_agent.load_pyg_info()
+    
     print('\n'+'='*25, "KNOWLEDGE AGENT END", '='*25+'\n')
 
 def configure_retriever(knowledge_agent, retriever):
@@ -37,6 +38,7 @@ def evaluate_knowledge_importance(data, agent_profile):
     for attempt in range(max_retries):
         response = call_llm(prompt)['answer']
         response = response.replace('\n', '').replace('```', '').replace('\\', '')
+
         match = re.search(r'\{\s*.*?\s*\}', response, re.DOTALL)
         if match:         
             try: 
@@ -47,11 +49,9 @@ def evaluate_knowledge_importance(data, agent_profile):
                 total_score = sum(sub_type_scores.values())
                 normalized_scores = {sub_type: score / total_score for sub_type, score in sub_type_scores.items()}
 
-
                 return normalized_scores
             except:
                 pass
-
 
 
 def evaluate_knowledge_importance(cases, agent_profile, total_num):
@@ -64,7 +64,6 @@ def evaluate_knowledge_importance(cases, agent_profile, total_num):
     for sentence, _, sub_type in cases:
         prompt += f"Sub_type: {sub_type}, Sentence: {sentence}\n"
     prompt += "[End of data]"
-
 
     max_retries = 20
     for attempt in range(max_retries):

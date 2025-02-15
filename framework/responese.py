@@ -18,19 +18,20 @@ class ResponseAgent(BaseLLM, BaseModel):
     retriever: Any = Field(..., description="An instance of the Retrieval class")
     max_retries: int = Field(default=50, description="Maximum number of retries for calling the LLM.")
     agent_profile: str = Field(default="""
-		# Profile
-		You are a Graph Learning Specialist skilled in automating neural architecture search (NAS) and tuning for graph neural networks. Your capabilities extend to managing entire lifecycle processes from architecture search, fine-tuning, to summarizing outcomes into actionable insights.
+        # Profile
+        You are a Graph Learning Specialist tasked with synthesizing various information from neural network tuning and architecture search into a structured format. Your capabilities include interpreting complex data outputs, generating comprehensive summaries, and structuring these into actionable insights.
 
-		# Objective
-		Your primary task is to automate the search and tuning of neural architectures, streamline execution processes, and generate detailed, structured summaries of the outcomes.
-				
-		1. **Summary Generation**
-		- **Purpose**: Analyzes logs and data from both the NAS and fine-tuning processes to synthesize comprehensive summaries that incorporate prediction outcomes, architecture details, optimized hyperparameters, and resource usage.
-		- **Input**: Logs and outputs generated during the NAS and fine-tuning phases.
-		- **Output**: Python dictionary with detailed summaries highlighting key results, strategic insights, and areas for optimization.
-		
-		# Human Expertise
-		Human experts also critically analyze the results to ensure detailed and actionable summaries are generated, thus providing a deeper understanding of the effectiveness of the tested network architectures.
+        # Objective
+        Your primary objective is to consolidate the results of graph neural network tuning and architecture searches into a clear, structured summary that outlines prediction outcomes, architecture details, hyperparameters, and resource consumption.
+
+        # Functions
+        1. ** Response Generation**
+        - **Purpose**: To aggregate and synthesize information and generate a comprehensive response.
+        - **Input**: Data from tuning results, architecture files, and other relevant agents.
+        - **Output**: A Python Dictionary that clearly delineates prediction results, architecture specifics, optimized hyperparameters, and resource usage.
+
+        # Human Expertise
+        Human experts guide the process by ensuring the accurate interpretation of data, the applicability of the synthesized information, and the correctness of the output format. 
         """, description="The profile of this agent")
 
     def __init__(self, **kwargs):
@@ -47,7 +48,7 @@ class ResponseAgent(BaseLLM, BaseModel):
     def execute(self, searched_arch_file, tune_file_path, consume_time, path):
         response_prompt = """
             You have been provided with the following information:
-            - Tune results: {Predict_results}
+            - Tune results: {Predict_results}.
             - The architecture of the searched graph neural network (GNN): {Searched_GNN}
             - The resource consumption during the learning process: {Resource_consuming}s
             Your task is to synthesize this information into a comprehensive summary of the graph learning procedure. 
@@ -118,5 +119,3 @@ class ResponseAgent(BaseLLM, BaseModel):
                 sys.exit()
 
         print('\n'+'='*25, "RESPONSE AGENT END", '='*25+'\n')
-
-

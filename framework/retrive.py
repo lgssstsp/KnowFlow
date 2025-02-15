@@ -29,22 +29,17 @@ class Retrieval:
         self.pyg_transforms_knowledge = pd.DataFrame(columns=['index', 'sentence', 'embedding'])
         
         # self.index = None  
-        self.experiment_knowledge_index = None  
-        self.prior_knowledge_index = None  
+        self.experiment_knowledge_index = None 
+        self.prior_knowledge_index = None
         self.pyg_nn_knowledge_index = None
         self.pyg_transforms_knowledge_index = None
         
         self.storage_path = storage_path
-        
 
-        
     def dynamic_manage_prior_knowledge_base(self):
-
-        
         unique_sub_types = self.prior_knowledge['prior_knowledge_type'].unique()
 
         for sub_type in unique_sub_types:
-
             sub_df_name = f'prior_knowledge_{sub_type}'
             sub_df_index_name = f'prior_knowledge_{sub_type}_index'
             sub_df_embeddings_name = f'prior_knowledge_{sub_type}_embeddings'
@@ -58,19 +53,15 @@ class Retrieval:
 
                 dimension = sub_embeddings.shape[1]
                 index = faiss.IndexFlatIP(dimension)
-                index.add(sub_embeddings)  
+                index.add(sub_embeddings) 
                 setattr(self, sub_df_index_name, index)
             else:
-
                 setattr(self, sub_df_embeddings_name, None)
                 setattr(self, sub_df_index_name, None)
 
     def load_knowledge(self, knowledge_dict, knowledge_type):
         if knowledge_type not in ['experiment', 'prior', 'pyg_nn', 'pyg_transforms']:
             raise ValueError("Knowledge type error.")
-        
- 
-            
         for key, values in knowledge_dict.items():
             if knowledge_type == 'prior' and isinstance(values, dict):  
                 for sub_key, sub_value in values.items():
@@ -78,8 +69,7 @@ class Retrieval:
                     self.add_sentence(sentence, knowledge_type, key) 
                     
                 self.dynamic_manage_prior_knowledge_base()
-                
-                
+
             else:
                 sentence = json.dumps(values, indent=4) 
                 self.add_sentence(sentence, knowledge_type)
@@ -99,9 +89,8 @@ class Retrieval:
             model_output = self.model(**encoded_input)
         embedding = self.mean_pooling(model_output, encoded_input['attention_mask'])
         
-        # return F.normalize(embedding, p=2, dim=1).cpu().numpy()
         
-        normalized_embedding = F.normalize(embedding, p=2, dim=1)  
+        normalized_embedding = F.normalize(embedding, p=2, dim=1) 
         return normalized_embedding.cpu().numpy()
         
         
@@ -109,7 +98,6 @@ class Retrieval:
     def add_sentence(self, sentence, knowledge_type, sub_type=None):
         embedding = self.encode_sentence(sentence)
         
-        # index = len(self.experiment_knowledge) + len(self.prior_knowledge)  
         experiment_knowledge_index_length = len(self.experiment_knowledge)
         prior_knowledge_index_length = len(self.prior_knowledge)
         pyg_nn_knowledge_index_length = len(self.pyg_nn_knowledge)
@@ -171,7 +159,7 @@ class Retrieval:
             self.pyg_transforms_knowledge_index.reset()
             self.pyg_transforms_knowledge_index.add(pyg_transforms_knowledge_embeddings)
 
-        
+    
 
     def search(self, query_sentence, knowledge_type, top_k=5):
 
@@ -238,6 +226,7 @@ class Retrieval:
         else:
             raise ValueError("Invalid knowledge type specified")
 
+         
         pattern = re.escape(query_sentence).replace(r'\-', '.*')
         regex = re.compile(pattern, re.IGNORECASE)
         matched_rows = knowledge_df[knowledge_df['sentence'].str.contains(regex, na=False)]
@@ -245,7 +234,6 @@ class Retrieval:
 
         results = matched_rows['sentence'].tolist()
         
-
         return results
 
     def load_cases_from_directory(self, directory_path):
